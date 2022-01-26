@@ -14,7 +14,7 @@ public class InteligenciaCentralView {
     public void exibirMenu() {
         System.out.println("#######---MENU---#####");
         System.out.println("[UTILIZE O NÚMERO CORRESPONDENTE A OPÇÃO]");
-        System.out.println("[1] - SOLICITAR ACESSO PARA A IC.");
+        System.out.println("[1] - CADASTRAR DADOS.");
         System.out.println("[0] - SAIR.");
 
         Scanner scanner = new Scanner(System.in);
@@ -22,10 +22,10 @@ public class InteligenciaCentralView {
 
         switch (opcao) {
             case "1":
+                Rebelde rebelde = this.rebeldeView.cadastrarRebelde();
                 boolean solicitarAcesso = this.inteligenciaCentral.solicitarAcesso();
                 if (solicitarAcesso) {
-                    System.out.println("Acesso PERMITIDO. Bem-vindo Rebelde!");
-                    Rebelde rebelde = this.rebeldeView.cadastrarRebelde();
+                    System.out.println("Acesso PERMITIDO. Bem-vindo novo Rebelde!");
                     this.inteligenciaCentral.cadastrarRebelde(rebelde);
                     this.inteligenciaCentral.imprimirListaDeRebeldes();
                 } else {
