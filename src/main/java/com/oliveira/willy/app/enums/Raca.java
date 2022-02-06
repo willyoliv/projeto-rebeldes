@@ -1,4 +1,4 @@
-package com.oliveira.willy.app.util;
+package com.oliveira.willy.app.enums;
 
 public enum Raca {
     HUMANO,

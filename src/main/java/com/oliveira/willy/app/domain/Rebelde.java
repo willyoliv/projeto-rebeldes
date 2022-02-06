@@ -1,6 +1,6 @@
 package com.oliveira.willy.app.domain;
 
-import com.oliveira.willy.app.util.Raca;
+import com.oliveira.willy.app.enums.Raca;
 import lombok.Data;
 
 @Data

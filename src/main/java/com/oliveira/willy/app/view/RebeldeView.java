@@ -1,7 +1,7 @@
 package com.oliveira.willy.app.view;
 
 import com.oliveira.willy.app.domain.Rebelde;
-import com.oliveira.willy.app.util.Raca;
+import com.oliveira.willy.app.enums.Raca;
 
 import java.util.Arrays;
 import java.util.InputMismatchException;
